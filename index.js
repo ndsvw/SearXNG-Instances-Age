@@ -17,7 +17,7 @@ for (let jsonFile of otherJsonFilesOrdered) {
   let instances = GetInstancesFromJson(json);
   for (let instance of instances) {
     if (instance in instancesByAge)
-      instancesByAge[instance] += 0.5;
+      instancesByAge[instance] += 0.25;
   }
 }
 
@@ -35,9 +35,9 @@ function GetInstancesFromJson(json) {
   let filteredKeys = keys.filter(k => instances[k].network_type === "normal")
     .filter(k => instances[k].http?.grade?.startsWith("A"))
     .filter(k => instances[k].tls.grade.startsWith("A"))
-    .filter(k => instances[k].html.grade.startsWith("V"))
-    .filter(k => instances[k].timing.search.all?.mean < 2)
-    .filter(k => instances[k].timing.search.all.median < 2)
+    .filter(k => instances[k].html?.grade === "V")
+    .filter(k => instances[k].timing.search.all?.mean < 2 ?? true)
+    .filter(k => instances[k].timing.search.all?.median < 2 ?? true)
     .sort((k1, k2) => instances[k1].timing.search.all.mean - instances[k2].timing.search.all.mean);
 
   let keysWithoutArchiveOrgPrefix = filteredKeys.map(k => k.replace(/https?:\/\/web\.archive\.org.+?(https?:\/\/.*)/, "$1"));
