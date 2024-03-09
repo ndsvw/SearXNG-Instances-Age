@@ -13,7 +13,52 @@ I got them via https://web.archive.org/web/20230801000000*/https://searx.space/d
 
 ## Output
 
-The 1st value is the instance URL, the 2nd value is the age of the instance (in years) going back from september 2023, rounded to 0.25 steps.
+The 1st value is the instance URL, the 2nd value is the age of the instance (in years), rounded to 0.25 steps.
+
+### from March 2024
+
+```
+[
+  [ 'https://search.mdosch.de/', 3.25 ],
+  [ 'https://searx.tuxcloud.net/', 3 ],
+  [ 'https://northboot.xyz/', 2.5 ],
+  [ 'https://search.bus-hit.me/', 2 ],
+  [ 'https://search.ononoki.org/', 2 ],
+  [ 'https://searx.namejeff.xyz/', 1.75 ],
+  [ 'https://search.sapti.me/', 1.5 ],
+  [ 'https://search.rowie.at/', 1.5 ],
+  [ 'https://xo.wtf/', 1.5 ],
+  [ 'https://searx.cthd.icu/', 1.25 ],
+  [ 'https://search.smnz.de/', 1.25 ],
+  [ 'https://searx.catfluori.de/', 1.25 ],
+  [ 'https://search.rhscz.eu/', 1 ],
+  [ 'https://searx.work/', 1 ],
+  [ 'https://search.leptons.xyz/', 1 ],
+  [ 'https://search.projectsegfau.lt/', 1 ],
+  [ 'https://searx.si/', 1 ],
+  [ 'https://baresearch.org/', 1 ],
+  [ 'https://search.im-in.space/', 0.75 ],
+  [ 'https://search.demoniak.ch/', 0.5 ],
+  [ 'https://searx.daetalytica.io/', 0.5 ],
+  [ 'https://searxng.ch/', 0.5 ],
+  [ 'https://searx.headpat.exchange/', 0.25 ],
+  [ 'https://s.mble.dk/', 0.25 ],
+  [ 'https://searx.ox2.fr/', 0.25 ],
+  [ 'https://searxng.ca/', 0 ],
+  [ 'https://searxng.site/', 0 ],
+  [ 'https://searx.rhscz.eu/', 0 ],
+  [ 'https://opnxng.com/', 0 ],
+  [ 'https://twinkpad.pl/', 0 ],
+  [ 'https://sx.thatxtreme.dev/', 0 ],
+  [ 'https://search.privacyredirect.com/', 0 ],
+  [ 'https://searx.aleteoryx.me/', 0 ],
+  [ 'https://searx.ari.lt/', 0 ],
+  [ 'https://searx.ee/', 0 ],
+  [ 'https://search.nadeko.net/', 0 ]
+]
+```
+
+### from September 2023:
 
 ```
 [
