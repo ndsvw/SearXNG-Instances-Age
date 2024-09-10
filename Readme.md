@@ -9,114 +9,90 @@ I aggregated data from archive.org get that information.
 
 ## Where to get the json files?
 
-I got them via https://web.archive.org/web/20230801000000*/https://searx.space/data/instances.json (for each year, one file for june and december)..
+I got them via https://web.archive.org/web/20230801000000*/https://searx.space/data/instances.json (for each year: one file for March, June, September and December)..
 
 ## Output
 
 The 1st value is the instance URL, the 2nd value is the age of the instance (in years), rounded to 0.25 steps.
 
-### from March 2024
 
-```
-[
-  [ 'https://search.mdosch.de/', 3.25 ],
-  [ 'https://searx.tuxcloud.net/', 3 ],
-  [ 'https://northboot.xyz/', 2.5 ],
-  [ 'https://search.bus-hit.me/', 2 ],
-  [ 'https://search.ononoki.org/', 2 ],
-  [ 'https://searx.namejeff.xyz/', 1.75 ],
-  [ 'https://search.sapti.me/', 1.5 ],
-  [ 'https://search.rowie.at/', 1.5 ],
-  [ 'https://xo.wtf/', 1.5 ],
-  [ 'https://searx.cthd.icu/', 1.25 ],
-  [ 'https://search.smnz.de/', 1.25 ],
-  [ 'https://searx.catfluori.de/', 1.25 ],
-  [ 'https://search.rhscz.eu/', 1 ],
-  [ 'https://searx.work/', 1 ],
-  [ 'https://search.leptons.xyz/', 1 ],
-  [ 'https://search.projectsegfau.lt/', 1 ],
-  [ 'https://searx.si/', 1 ],
-  [ 'https://baresearch.org/', 1 ],
-  [ 'https://search.im-in.space/', 0.75 ],
-  [ 'https://search.demoniak.ch/', 0.5 ],
-  [ 'https://searx.daetalytica.io/', 0.5 ],
-  [ 'https://searxng.ch/', 0.5 ],
-  [ 'https://searx.headpat.exchange/', 0.25 ],
-  [ 'https://s.mble.dk/', 0.25 ],
-  [ 'https://searx.ox2.fr/', 0.25 ],
-  [ 'https://searxng.ca/', 0 ],
-  [ 'https://searxng.site/', 0 ],
-  [ 'https://searx.rhscz.eu/', 0 ],
-  [ 'https://opnxng.com/', 0 ],
-  [ 'https://twinkpad.pl/', 0 ],
-  [ 'https://sx.thatxtreme.dev/', 0 ],
-  [ 'https://search.privacyredirect.com/', 0 ],
-  [ 'https://searx.aleteoryx.me/', 0 ],
-  [ 'https://searx.ari.lt/', 0 ],
-  [ 'https://searx.ee/', 0 ],
-  [ 'https://search.nadeko.net/', 0 ]
-]
-```
+### from September 2024
 
-### from September 2023:
-
-```
-[
-  [ 'https://searx.fmac.xyz/', 3 ],
-  [ 'https://search.mdosch.de/', 2.75 ],
-  [ 'https://searx.prvcy.eu/', 2.5 ],
-  [ 'https://searx.tuxcloud.net/', 2.5 ],
-  [ 'https://searx.be/', 2.25 ],
-  [ 'https://searx.ru/', 2.25 ],
-  [ 'https://northboot.xyz/', 2 ],
-  [ 'https://searx.divided-by-zero.eu/', 2 ],
-  [ 'https://searx.tiekoetter.com/', 1.75 ],
-  [ 'https://search.bus-hit.me/', 1.5 ],
-  [ 'https://searx.mha.fi/', 1.5 ],
-  [ 'https://search.ononoki.org/', 1.5 ],
-  [ 'https://searx.namejeff.xyz/', 1.25 ],
-  [ 'https://search.rabbit-company.com/', 1.25 ],
-  [ 'https://search.rowie.at/', 1 ],
-  [ 'https://searx.mastodontech.de/', 1 ],
-  [ 'https://searx.dresden.network/', 1 ],
-  [ 'https://xo.wtf/', 1 ],
-  [ 'https://searx.ericaftereric.top/', 1 ],
-  [ 'https://searx.baczek.me/', 1 ],
-  [ 'https://search.sapti.me/', 1 ],
-  [ 'https://search.zzls.xyz/', 1 ],
-  [ 'https://search.rhscz.eu/', 0.75 ],
-  [ 'https://searx.catfluori.de/', 0.75 ],
-  [ 'https://searx.cthd.icu/', 0.75 ],
-  [ 'https://search.smnz.de/', 0.75 ],
-  [ 'https://search.gcomm.ch/', 0.75 ],
-  [ 'https://search.us.projectsegfau.lt/', 0.75 ],
-  [ 'https://searx.work/', 0.5 ],
-  [ 'https://search.cronobox.one/', 0.5 ],
-  [ 'https://baresearch.org/', 0.5 ],
-  [ 'https://searx.si/', 0.5 ],
-  [ 'https://darmarit.org/searx/', 0.5 ],
-  [ 'https://search.modalogi.com/', 0.5 ],
-  [ 'https://searx.kutay.dev/', 0.5 ],
-  [ 'https://search.leptons.xyz/', 0.5 ],
-  [ 'https://freesearch.club/', 0.25 ],
-  [ 'https://search.citw.lgbt/', 0.25 ],
-  [ 'https://searx.doofpot.nl/', 0.25 ],
-  [ 'https://search.im-in.space/', 0.25 ],
-  [ 'https://search.laksith.dev/', 0.25 ],
-  [ 'https://search.demoniak.ch/', 0 ],
-  [ 'https://searx.daetalytica.io/', 0 ],
-  [ 'https://searxng.online/', 0 ],
-  [ 'https://search.fawkesguy.com/', 0 ],
-  [ 'https://search.lvkaszus.pl/', 0 ],
-  [ 'https://search.ovh/', 0 ],
-  [ 'https://searx.headpat.exchange/', 0 ],
-  [ 'https://search.kokomo.cloud/', 0 ],
-  [ 'https://searxng.se/', 0 ],
-  [ 'https://searxng.xcxc.eu/', 0 ],
-  [ 'https://searx.bissisoft.com/', 0 ],
-  [ 'https://searxng.ch/', 0 ],
-  [ 'https://searx.zhenyapav.com/', 0 ],
-  [ 'https://searx.perennialte.ch/', 0 ],
-  [ 'https://searx.ox2.fr/', 0 ]
-]
-```
+1) https://searx.tuxcloud.net/, 4.5 years
+1) https://www.gruble.de/, 4.5 years
+1) https://search.mdosch.de/, 4.5 years
+1) https://searx.be/, 4.25 years
+1) https://searx.dresden.network/, 3.75 years
+1) https://darmarit.org/searx/, 3.25 years
+1) https://northboot.xyz/, 3 years
+1) https://searx.tiekoetter.com/, 2.75 years
+1) https://paulgo.io/, 2.75 years
+1) http://4n53nafyi77iplnbrpmxnp3x4exbswwxigujaxy3b37fvr7bvlopxeyd.onion/, 2.75 years
+1) https://sx.catgirl.cloud/, 2.75 years
+1) https://search.bus-hit.me/, 2.5 years
+1) https://search.ononoki.org/, 2.5 years
+1) https://searx.namejeff.xyz/, 2.25 years
+1) https://etsi.me/, 2.25 years
+1) https://searx.sev.monster/, 2.25 years
+1) http://searx3aolosaf3urwnhpynlhuokqsgz47si4pzz5hvb7uuzyjncl2tid.onion/, 2.25 years
+1) https://priv.au/, 2 years
+1) https://opnxng.com/, 2 years
+1) https://search.sapti.me/, 2 years
+1) https://search.rowie.at/, 2 years
+1) https://search.rhscz.eu/, 1.75 years
+1) https://searx.work/, 1.75 years
+1) https://ooglester.com/, 1.75 years
+1) https://searx.oakleycord.dev/, 1.75 years
+1) https://search.smnz.de/, 1.75 years
+1) https://search.projectsegfau.lt/, 1.75 years
+1) https://searx.juancord.xyz/, 1.75 years
+1) https://s.trung.fun/, 1.75 years
+1) https://baresearch.org/, 1.5 years
+1) https://search.leptons.xyz/, 1.5 years
+1) https://search.im-in.space/, 1.25 years
+1) https://search.inetol.net/, 1 years
+1) https://searx.zhenyapav.com/, 1 years
+1) https://searx.daetalytica.io/, 1 years
+1) https://search.citw.lgbt/, 1 years
+1) https://searx.ox2.fr/, 1 years
+1) https://searxng.ch/, 1 years
+1) https://copp.gg/, 1 years
+1) http://search.pjsfkvpxlinjamtawaksbnnaqs2fc2mtvmozrzckxh7f3kis6yea25ad.onion/, 1 years
+1) https://searx.perennialte.ch/, 1 years
+1) https://search.hbubli.cc/, 0.75 years
+1) https://nyc1.sx.ggtyler.dev/, 0.75 years
+1) https://s.mble.dk/, 0.75 years
+1) https://searx.rhscz.eu/, 0.5 years
+1) https://searx.ro/, 0.5 years
+1) https://searxng.site/, 0.5 years
+1) https://searx.aleteoryx.me/, 0.5 years
+1) http://searxwcao6avdvuaspdrjheiwrcey2zvxq3dj52gruo3oaqcr2ddlyqd.onion/, 0.5 years
+1) https://search.nadeko.net/, 0.5 years
+1) https://searx.lunar.icu/, 0.5 years
+1) https://search.privacyredirect.com/, 0.5 years
+1) https://searx.hu/, 0.25 years
+1) https://search.indst.eu/, 0.25 years
+1) https://searx.colbster937.dev/, 0.25 years
+1) https://search.charliewhiskey.net/, 0.25 years
+1) https://skyrimhater.com/, 0.25 years
+1) https://fairsuch.net/, 0.25 years
+1) https://search.ngn.tf/, 0.25 years
+1) https://search.incogniweb.net/, 0.25 years
+1) https://search.nerdvpn.de/, 0.25 years
+1) http://lbmegc3rjnekmdxuisynqdc7y3m2tgyq7gj257ooddaobxqjw36bdayd.onion/, 0.25 years
+1) https://search.einfachzocken.eu/, 0.25 years
+1) http://nerdvpn4iln4didgzcw7pgvjv4p3pwn3e3dq732oxwidfv6bacnyuvad.onion/, 0.25 years
+1) https://sx.thatxtreme.dev/, 0.25 years
+1) https://sx.zorby.top/, 0 years
+1) https://search.blitzw.in/, 0 years
+1) https://search.tommy-tran.com/, 0 years
+1) https://seek.fyi/, 0 years
+1) https://search.nordh.tech/, 0 years
+1) https://search.fredix.xyz/, 0 years
+1) https://searx.thefloatinglab.world/, 0 years
+1) https://searx.foss.family/, 0 years
+1) https://searx.electroncash.de/, 0 years
+1) https://nogoo.me/, 0 years
+1) https://searxng.hweeren.com/, 0 years
+1) https://searxng.shreven.org/, 0 years
+1) http://3cvltarlpeanooabgva7tbmtlzznyr3ltsndvwtngwuzqtvwyllaz4qd.onion/, 0 years

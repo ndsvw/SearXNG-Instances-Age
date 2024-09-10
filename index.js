@@ -29,17 +29,29 @@ var instancesByAgeSorted = Object.keys(instancesByAge).map(function (key) {
 
 console.log(instancesByAgeSorted);
 
+console.log("");
+console.log("");
+
+console.log(instancesByAgeSorted.map(function (val) {
+  return "1) " + val[0] + ", " + val[1] + " years";
+}).join("\n"));
+
 function GetInstancesFromJson(json) {
   let instances = json.instances;
   let keys = Object.keys(instances);
-  let filteredKeys = keys.filter(k => instances[k].network_type === "normal")
-    .filter(k => instances[k].http?.grade?.startsWith("A"))
-    .filter(k => instances[k].tls.grade.startsWith("A"))
-    .filter(k => instances[k].html?.grade === "V")
-    .filter(k => instances[k].timing.search.all?.mean < 2 ?? true)
-    .filter(k => instances[k].timing.search.all?.median < 2 ?? true)
-    .sort((k1, k2) => instances[k1].timing.search.all.mean - instances[k2].timing.search.all.mean);
+  let sortedKeys = // deactivated for now: keys.filter(k => IsHighQualityInstance(instances[k]))
+    keys.filter(k => instances[k].timing?.search?.all != null)
+      .filter(k => instances[k].timing?.search?.all != null)
+      .sort((k1, k2) => instances[k1].timing.search.all.mean - instances[k2].timing.search.all.mean);
 
-  let keysWithoutArchiveOrgPrefix = filteredKeys.map(k => k.replace(/https?:\/\/web\.archive\.org.+?(https?:\/\/.*)/, "$1"));
+  let keysWithoutArchiveOrgPrefix = sortedKeys.map(k => k.replace(/https?:\/\/web\.archive\.org.+?(https?:\/\/.*)/, "$1"));
   return keysWithoutArchiveOrgPrefix;
+}
+
+function IsHighQualityInstance(instance) {
+  return instance.http?.grade?.startsWith("A") &&
+    instance.tls.grade.startsWith("A") &&
+    instance.html?.grade === "V" &&
+    (instance.timing.search.all?.mean < 2 ?? true) &&
+    (instance.timing.search.all?.median < 2 ?? true);
 }
