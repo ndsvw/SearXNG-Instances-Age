@@ -1,10 +1,14 @@
 var fs = require('fs');
+const path = require('path');
 
-let jsonFiles = fs.readdirSync('.').filter(f => f.endsWith("json"));
-let latestJsonFile = jsonFiles.sort().reverse()[0];
-let otherJsonFilesOrdered = jsonFiles.filter(f => f !== latestJsonFile);
+const dirPath = path.resolve(__dirname, './data');
 
-const latestJson = JSON.parse(fs.readFileSync(latestJsonFile, { encoding: 'utf8', flag: 'r' }));
+let jsonFiles = fs.readdirSync(dirPath).filter(f => f.endsWith("json"));
+let latestJsonFileName = jsonFiles.sort().reverse()[0];
+let latestJsonFilePath = path.resolve(__dirname, './data', latestJsonFileName);
+let otherJsonFilesOrdered = jsonFiles.filter(f => f !== latestJsonFileName);
+
+const latestJson = JSON.parse(fs.readFileSync(latestJsonFilePath, { encoding: 'utf8', flag: 'r' }));
 let latestInstances = GetInstancesFromJson(latestJson);
 
 let instancesByAge = [];
@@ -13,7 +17,8 @@ for (let instance of latestInstances) {
 }
 
 for (let jsonFile of otherJsonFilesOrdered) {
-  const json = JSON.parse(fs.readFileSync(jsonFile, { encoding: 'utf8', flag: 'r' }));
+  const jsonPath = path.resolve(__dirname, './data', jsonFile);
+  const json = JSON.parse(fs.readFileSync(jsonPath, { encoding: 'utf8', flag: 'r' }));
   let instances = GetInstancesFromJson(json);
   for (let instance of instances) {
     if (instance in instancesByAge)

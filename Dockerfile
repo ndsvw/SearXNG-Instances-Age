@@ -2,7 +2,9 @@ FROM node:22-alpine
 
 WORKDIR /app
 
-COPY *.json ./
+RUN mkdir -p data
+
+COPY data/*.json ./data
 COPY index.js ./
 
 USER node
