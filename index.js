@@ -38,7 +38,7 @@ console.log("");
 console.log("");
 
 console.log(instancesByAgeSorted.map(function (val) {
-  return "1) " + val[0] + ", " + val[1] + " years";
+  return "1) " + val[0] + ", " + (val[1] == 0 ? "< 0.25" : val[1]) + " years";
 }).join("\n"));
 
 function GetInstancesFromJson(json) {
